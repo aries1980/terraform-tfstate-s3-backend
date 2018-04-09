@@ -29,7 +29,7 @@ resource "aws_s3_bucket" "tfstates" {
 }
 
 resource "aws_s3_bucket" "infrastructure_logs" {
-  bucket = "${var.log_bucket}"
+  bucket = "${var.project_prefix}-infrastructure-logs"
   acl    = "log-delivery-write"
 
   lifecycle_rule {
