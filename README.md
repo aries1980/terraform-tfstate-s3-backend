@@ -14,7 +14,7 @@ module "chamber-test" {
   aws_region       = "${var.aws_region}"
   project_prefix   = "my_project_no_789"
 }
-
+```
 
 As seen in the module `variables.tf`, there are couple of required and optional variables that needs to be provided:
 
